@@ -1,0 +1,190 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Arya&family=Italiana&family=Ubuntu:wght@300&display=swap');
+
+/*BARRA DE NAVEGACION*/
+
+.header {
+    background-image: url('../img/Rectangle1.png');
+    background-size: cover;
+    min-height: 45vh;
+}
+
+.header .navbar {
+    background-color: transparent !important;
+}
+
+.navbar-brand {
+    padding-left: 1em !important;
+    color: #f6f6f6 !important;
+    font-family: 'Italiana', sans-serif;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: capitalize;
+}
+
+.navbar-brand:hover {
+    color: #d1d1d1 !important;
+}
+
+.nav-link {
+    color: #f6f6f6 !important;
+    font-family: 'Italiana', sans-serif;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.nav-link:hover {
+    color: #d1d1d1 !important;
+}
+
+.navbar-nav {
+    padding-right: 1em !important;
+}
+
+.seccion_texto_centrado {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #b0b0b0;
+    font-family: 'Italiana', sans-serif;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    padding-top: 1.5em;
+}
+
+.Primera_Linea {
+    background: rgba(49, 49, 49, 0.40);
+    padding-left: 2em;
+    padding-right: 2em;
+    padding-top: .3em;
+    padding-bottom: .3em;
+}
+
+/*SECCION ICONOS*/
+
+.iconos {
+    display: flex;
+    align-content: end;
+    justify-content: flex-end;
+    padding-right: 1em;
+    padding-bottom: 0.5em;
+    padding-top:3em
+}
+
+.bi-github {
+    width: 30px;
+    height: 30px;
+    color: #d1d1d1;
+}
+
+.bi-linkedin {
+    width: 30px;
+    height: 30px;
+    color: #d1d1d1;
+    margin-left: 0.7em;
+}
+
+/*SECCION SOBRE MI*/
+
+.seccion_sobre_mi {
+    min-height: 50vh;
+    background: #d1d1d1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.imagen_portfolio {
+    margin-top: 4em;
+    margin-bottom: 2em;
+    width: 150px;
+    height: 180px;
+    border-radius: 32px;
+}
+
+.encabezado_sobre_mi {
+    font-family: 'Italiana', sans-serif;
+    font-style: normal;
+    color: #454545;
+    margin-top: .3em;
+    margin-bottom: 1em;
+}
+
+.Parrafo_seccion_sobre_mi {
+    font-family: 'Arya', sans-serif;
+    color: #454545;
+    font-style: normal;
+    font-size: 20px;
+    text-align: center;
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 3em;
+}
+
+/*ESTILOS RESPONSIVE PARA DISPOSITIVOS MOVILES CON UN ANCHO MAXIMO DE 768PX*/
+
+@media only screen and (max-width: 768px) {
+    .navbar-brand {
+        padding-left: 0 !important;
+        font-size: 20px;
+        padding-left: 1em !important;
+    }
+
+    .nav-link {
+        font-size: 20px;
+    }
+
+    .navbar-nav {
+        padding-right: 0 !important;
+    }
+
+    .seccion_texto_centrado {
+        margin-top: 1.4em;
+        font-size: 24px;
+    }
+
+    .iconos {
+        justify-content: center;
+        align-content: end;
+        padding-bottom: 0.5em;
+    }
+
+    .bi-github,
+    .bi-linkedin {
+        width: 30px;
+        height: 30px;
+        margin: 0 0.5em;
+    }
+
+    .seccion_sobre_mi {
+        min-height: auto;
+    }
+
+    .imagen_portfolio {
+        width: 100px;
+        height: 120px;
+    }
+
+    .encabezado_sobre_mi {
+        font-size: 22px;
+    }
+
+    .Parrafo_seccion_sobre_mi {
+        font-size: 18px;
+        width: 90%;
+    }
+}
+
